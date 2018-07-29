@@ -10,12 +10,11 @@ if exists('g:loaded_sweep_trail')
 endif
 let g:loaded_sweep_trail = 1
 
-command! -bar SweepTrail call sweep_trail#sweep()
-
 " 副作用の回避
 let s:save_cpo = &cpo
 set cpo&vim
 
+command! -bar SweepTrail call sweep_trail#sweep()
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
