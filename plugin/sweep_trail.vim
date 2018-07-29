@@ -14,6 +14,7 @@ let g:loaded_sweep_trail = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
+" 処理の呼び出し
 command! -bar SweepTrail call sweep_trail#sweep()
 
 let &cpo = s:save_cpo

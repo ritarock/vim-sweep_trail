@@ -7,7 +7,7 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-" 処理
+" 実際の処理
 function! sweep_trail#sweep()
   %substitute/\s\+$//
 endfunction
